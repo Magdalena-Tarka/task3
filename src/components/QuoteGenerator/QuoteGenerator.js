@@ -60,26 +60,24 @@ const QuoteGenerator = ({ className }) => {
     <div className={clsx(className, styles.root)}>
       <div className={styles.topButtonsContainer}>
         <button
-          className={styles.btn_previous}
+          className={styles.btn_nav}
           onClick={() => getPreviousQuote()}
-        >previous quote</button>
+        >prev quote</button>
         <button
-          className={styles.btn_next}
+          className={styles.btn_nav}
           onClick={() => getNextQuote()}
         >next quote</button>
       </div>
 
       <div className={styles.quoteContainer}>
-        <p className={styles.quote}>{quote}</p>
-        <p className={styles.author}>{author}</p>
+        <p className={styles.quote}>&quot;{quote}&quot;</p>
+        <p className={styles.author}>&ndash; {author}</p>
       </div>
 
-      <div className={styles.downButtonsContainer}>
-        <button
-          className={styles.btn_draw}
-          onClick={() => getRandomQuote()}
-        >draw quote</button>
-      </div>
+      <button
+        className={styles.btn_draw}
+        onClick={() => getRandomQuote()}
+      >draw quote</button>
     </div>
   );
 };

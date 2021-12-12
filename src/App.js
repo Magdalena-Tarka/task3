@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from './components/Container/Container';
 import QuoteGenerator from './components/QuoteGenerator/QuoteGenerator';
+import './styles/global.scss';
 
 function App() {
   return (

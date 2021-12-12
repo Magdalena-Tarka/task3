@@ -1,3 +1,12 @@
+@import './settings.scss';
+
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+body {
+  background: url('https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
 }
