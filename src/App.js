@@ -1,11 +1,13 @@
 import React from 'react';
+import Container from './components/Container/Container';
+import QuoteGenerator from './components/QuoteGenerator/QuoteGenerator';
 
 function App() {
   return (
     <div>
-      <p>
-        Hello
-      </p>
+      <Container>
+        <QuoteGenerator />
+      </Container>
     </div>
   );
 }
